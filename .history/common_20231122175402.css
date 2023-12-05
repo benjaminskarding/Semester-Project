@@ -1,0 +1,50 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none; 
+    cursor: pointer; 
+    color: inherit;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Centers the children */
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+
+
+.header-nav {
+    position: absolute; /* Positions the nav independently of the flex container */
+    right: 1rem; /* Positions the nav on the right side with 1rem spacing */
+    display: flex;
+    align-items: center;
+}
+
+.header-placeholder, .header-logo {
+    flex: 1; 
+}
+
+
+.header-link {
+    margin-left: 1rem; 
+    color: white; 
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+}
+
+.header-link:hover {
+    text-decoration: underline; /* Underline on hover for links */
+    cursor: pointer; /* Hand icon on hover */
+}

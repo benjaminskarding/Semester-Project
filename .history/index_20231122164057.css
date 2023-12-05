@@ -1,0 +1,45 @@
+@import url(common.css);
+@import url(_reset.css);
+@import url(_variables.css);
+
+
+
+
+.fullscreen-bg-vid {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: auto; 
+    height: 100vh; 
+    z-index: -1; 
+}
+
+
+.fullscreen-bg-vid video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; 
+}
+
+.content {
+    position: relative; 
+    height: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: white; 
+    text-align: center; 
+    z-index: 1; 
+}
+
+
+.hero-text {
+    display: flex;
+    font-family: var(--font-primary);
+    color: white;
+    font-size: 3rem;
+}
+
+h2 {
+    font-weight: 400;
+}

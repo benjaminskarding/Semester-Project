@@ -1,0 +1,52 @@
+@import url(common.css);
+@import url(_reset.css);
+@import url(_variables.css);
+
+
+.main-grid {
+    display: grid;
+    gap: 2rem; /* Adjust the gap as needed */
+    margin: 0 10rem 0 10rem;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
+    grid-template-areas: 
+        "title title"
+        "main-content main-content";
+}
+
+.title { 
+    grid-area: title;
+    /* Additional styles for title */
+}
+
+.main-content { 
+    grid-area: main-content;
+    /* Additional styles for main-content if needed */
+}
+
+.exhibit {
+    display: flex; /* Use flexbox instead of grid for direct children layout */
+    gap: 1rem; /* Space between image and text */
+    align-items: center; /* Aligns the content vertically */
+}
+
+.exhibit:nth-child(odd) .exhibit-info {
+    order: 2; /* Text will be on the right for odd-numbered exhibits */
+}
+
+.exhibit:nth-child(even) .exhibit-info {
+    order: 1; /* Text will be on the left for even-numbered exhibits */
+}
+
+.exhibit img {
+    width: 100%; /* Ensures the image takes up the full width */
+    height: auto; /* Keeps the image aspect ratio */
+    border: 3px solid orange; /* As seen in the image, adjust as needed */
+}
+
+.exhibit-info {
+    padding: 1rem; /* Add padding around the text */
+    /* Additional styles for exhibit-info if needed */
+    border: 3px solid orange; /* As seen in the image, adjust as needed */
+}
+
+

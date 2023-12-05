@@ -1,0 +1,17 @@
+@import url(common.css);
+@import url(_reset.css);
+@import url(_variables.css);
+
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+
+
+.main-content p {
+    margin-bottom: 1em;
+}

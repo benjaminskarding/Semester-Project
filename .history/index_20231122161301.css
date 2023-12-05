@@ -1,0 +1,21 @@
+@import url(common.css);
+@import url(_reset.css);
+
+
+
+
+.fullscreen-bg-vid {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: auto; 
+    height: 1080px; 
+    z-index: -1; 
+}
+
+
+.fullscreen-bg-vid video {
+    width: 1920px;
+    height: 1080px;
+    object-fit: cover; /* This will cover the entire area without stretching */
+}

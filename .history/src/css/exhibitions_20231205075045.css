@@ -1,0 +1,48 @@
+@import url(common.css);
+@import url(_reset.css);
+@import url(_variables.css);
+
+
+.main-grid { 
+    display: grid;
+    grid-gap: 3rem;
+    margin: 0 10rem 0 10rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "title"
+        "exhibit";
+
+}
+
+.main-content { grid-area: main-content }
+.title { grid-area: title}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.exhibit {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Splits each exhibit into two equal columns */
+    align-items: center; /* Aligns the content vertically */
+    gap: 1rem; /* Space between image and text */
+}
+
+.exhibit:nth-child(even) .exhibit-info {
+    order: 1; /* This will switch the text to the left side for even exhibits */
+}
+
+.exhibit img {
+    width: 100%; /* Ensures the image takes up the full grid column */
+    height: auto; /* Keeps the image aspect ratio */
+    border: 3px solid orange; /* Adjust as per your design */
+}
+
+.exhibit-info {
+    padding: 1rem; /* Add padding around the text */
+}
+
+
+

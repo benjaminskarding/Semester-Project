@@ -1,0 +1,89 @@
+@import url(common.css);
+@import url(_reset.css);
+@import url(_variables.css);
+
+.main-grid { 
+    display: grid;
+    margin-bottom: 5rem;
+    margin-left: 3rem;
+    grid-gap: 3rem;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "main-content sidebar"
+
+}
+
+.main-content { grid-area: main-content }
+.sidebar     { grid-area: sidebar }
+
+
+/* Special Events */
+
+.specEvents {
+    display: flex;
+    flex-direction: column;
+}
+
+.specContent {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+/* Special Events Dropdown Arrow */
+
+.arrow {
+    transition: transform 0.3s ease;
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+    display: inline-block; 
+
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle-label {
+    cursor: pointer;
+    display: inline-block; 
+    padding: 10px;
+    color: inherit; 
+    vertical-align: middle; 
+    color: var(--color-secondary);
+    font-size: 2.25rem;
+}
+
+.toggle-label .arrow {
+    transition: transform 0.3s ease;
+}
+
+.toggle:checked + .toggle-label .arrow {
+    transform: rotate(180deg);
+}
+
+/* Special Events Dropdown Content */
+
+.content {
+    display: none;
+    padding: 10px;
+}
+
+.toggle:checked ~ .content {
+    display: block;
+}
+
+.content {
+    transition: all 0.3s ease-in-out;
+}
+
+.specEventMainText {
+    font-size: 3.625rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }

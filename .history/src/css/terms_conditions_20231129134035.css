@@ -1,0 +1,21 @@
+@import url(common.css);
+@import url(_reset.css);
+@import url(_variables.css);
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+
+.main-content p {
+    margin-bottom: 1em;
+}

@@ -1,0 +1,37 @@
+:root{
+    --color-primary: white;
+    --color-secondary: #E66800;
+
+    --font-primary: 'Red Hat Display', sans-serif;
+    --font-size: 16px;
+}
+
+.mediumweight {
+    font-weight: 500
+}
+
+.regularweight {
+    font-weight: 400;
+}
+
+.semiboldweight {
+    font-weight: 600;
+}
+
+.boldweight {
+    font-weight: 700;
+}
+
+
+
+
+h1,h2,h3,h4,p {
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 4rem;       /*86px*/
+    color: white;
+}

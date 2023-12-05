@@ -1,0 +1,135 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer; 
+    color: inherit;
+}
+
+/* common header, landing page has specific */
+
+.header-collection {
+    background-color: white;
+    height: 160px;
+}
+
+.header-wrapper {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.logo {
+    margin-top: 1.5rem;
+}
+
+  
+.header-main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.header-nav-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-medium);
+}
+
+.header-nav-left a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+  
+.header-nav-center-logo {
+    flex: 0;
+}
+  
+.header-nav-right-placeholder {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* footer */
+
+.footer{
+	background-color: var(--color-secondary);
+  height: 288px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    height: 288px;
+    width: 100%;
+}
+
+.footer-left-container {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+    margin-left: 0;
+}
+
+.footer-center-container {
+    display: flex;
+    flex: 4;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5rem;
+    height: 150px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+  
+
+
+.footer-logo {
+    height: 100px;
+}
+
+.footer-titles {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 2rem;
+  
+}
+
+
+/* Main content */
+
+.main-content-container {
+    display: flex;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    background-color: #E66800;
+    width: 100%;
+    height: 160px;
+}
+
+.top-bar h3 {
+    margin-left: 3rem;
+}
+

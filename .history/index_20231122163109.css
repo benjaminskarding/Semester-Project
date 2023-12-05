@@ -1,0 +1,38 @@
+@import url(common.css);
+@import url(_reset.css);
+
+
+
+
+.fullscreen-bg-vid {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: auto; 
+    height: 100vh; 
+    z-index: -1; 
+}
+
+
+.fullscreen-bg-vid video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; 
+}
+
+.content {
+    position: relative; /* Position content relative to the body */
+    height: 100%; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    color: white; /* For better visibility on top of a video */
+    text-align: center; /* Center text */
+    z-index: 1; /* Ensure content is above the video */
+}
+
+
+.hero-text {
+    font-family: var(--font-primary);
+    font-size: 40px;
+}

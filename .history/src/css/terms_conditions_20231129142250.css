@@ -1,0 +1,28 @@
+@import url(common.css);
+@import url(_reset.css);
+@import url(_variables.css);
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start; 
+    background-color: #E66800;
+    width: 35%; 
+    height: 100vh;
+  }
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.main-content p, li {
+    margin-bottom: 1em;
+    margin-right: 3em;
+}
+
+

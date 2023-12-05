@@ -1,0 +1,14 @@
+@import url(common.css);
+@import url(_reset.css);
+
+
+
+
+.fullscreen-bg-vid {
+    position: fixed; /* Use fixed or absolute position */
+    top: 0;
+    left: 0;
+    width: auto; /* 100% of the viewport width */
+    height: 100%; /* 100% of the viewport height */
+    z-index: -1; 
+}

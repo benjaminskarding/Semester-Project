@@ -1,0 +1,47 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none; 
+    cursor: pointer; 
+    color: inherit;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; 
+}
+
+
+
+.header-nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+.header-placeholder, .header-logo {
+    flex: 1; 
+}
+
+
+.header-link {
+    margin-left: 1rem; 
+    color: white; 
+}
+
+.header-link:hover {
+    text-decoration: underline; /* Underline on hover for links */
+    cursor: pointer; /* Hand icon on hover */
+}

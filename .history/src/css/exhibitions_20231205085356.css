@@ -1,0 +1,106 @@
+@import url(common.css);
+@import url(_reset.css);
+@import url(_variables.css);
+
+
+.main-grid {
+    display: grid;
+    gap: 2rem; 
+    margin: 0 10rem;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas: 
+        "title title"
+        "topText topPic"
+        "pic1 text1"
+        "text2 pic2"
+        "pic3 text3"
+        "botText botPic";
+}
+
+
+.title { 
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.topPic {
+    grid-area: topPic;
+}
+
+.topText {
+    grid-area: topText;
+}
+
+.pic1 {
+    grid-area: pic1;
+}
+
+.text2 {
+    grid-area: text1;
+}
+
+.pic2 {
+    grid-area: pic2;
+}
+
+.text2 {
+    grid-area: text2;
+}
+
+.text3 {
+    grid-area: text3;
+}
+
+.pic3 {
+    grid-area: pic3;
+}
+
+.botText {
+    grid-area: botText;
+}
+
+.botPic {
+    grid-area: botPic;
+}
+
+
+
+.topPic img,
+.pic1 img,
+.pic2 img,
+.pic3 img,
+.botPic img {
+    height: 450px;
+}
+
+.topText,
+.text1,
+.text2,
+.text3,
+.botText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 40%;
+}
+
+.topText p,
+.text1 p,
+.text2 p,
+.text3 p,
+.botText p {
+    margin-bottom: 1rem;
+}
+
+
+.topPic,
+.pic1,
+.pic2,
+.pic3,
+.botPic {
+    display: flex;
+    justify-content: center;
+}

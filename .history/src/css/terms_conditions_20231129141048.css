@@ -1,0 +1,34 @@
+@import url(common.css);
+@import url(_reset.css);
+@import url(_variables.css);
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align sidebar content to center */
+    justify-content: flex-start; /* Align sidebar content to start from top */
+    background-color: #E66800;
+    width: 35%; 
+  }
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.main-content p {
+    margin-bottom: 1em;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #E66800;
+    width: 35%;
+    height: 100vh;
+}

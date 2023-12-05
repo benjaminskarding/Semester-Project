@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/contribute.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header class="header-collection">
+        <div class="header-wrapper">
+            <nav class="header-main-nav">
+                <div class="header-nav-left-placeholder"> 
+                </div>
+                <div class="header-nav-center-logo">
+                    <a href="index.html" aria-label="Go to homepage">
+                        <img class="logo" src="assets/images/logo/whitelogo.svg" alt="company logo">
+                    </a>
+                </div>
+                <div class="header-nav-right">
+                    <label for="menuToggle" class="menu-button" aria-label="Open Menu"> <!--toggles overlay-->
+                        <span class="white">MENU</span>
+                        <img src="assets/images/icons/helix.svg" class="menuIcon" alt="navigation menu icon">
+                    </label>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-grid">
+        <div class="title">
+          <h2 class="orange">Get Involved</h2>
+        </div>
+        <div class="main-content">
+            <div class="leftCol">
+              <p class="bold">Internships</p>
+              <p>Are you interested in working in a museum?</p>
+              <p>Do you enjoy the fun and excitement of sharing the wonders of nature with people?</p>
+              <p>Well you could be just the right person to enjoy an internship at the museum.</p>
+              <p>You'll be learning from a number of different academics and people who are passionate about science and sharing it with the wider community.</p>
+              <div class="button-container">
+                <button>Apply</button>
+              </div>
+            </div>
+            <div class="centCol">
+              <p class="bold">Support</p>
+              <p>There are various ways you can support the museum.</p>
+              <p>Donations are very welcome and are an important way we keep this museum open and accessible to the whole community.</p>
+              <p>You can also support us by donating items of interest to the museum's collections.</p>
+              <p>If you have some item or collection that you think others would enjoy, please let us know by contacting our Collections Department and they will be able to assist you.</p>
+              <div class="button-container">
+                <button>Donate</button>
+                <button>Make a Gift</button>
+              </div>
+            </div>
+            <div class="rightCol">
+              <p class="bold">Volunteer</p>
+              <p>A number of people volunteer their time and effort to keep the displays in good order and ready for visitors to come and enjoy.</p>
+              <p>Volunteering has its perks including getting to see behind the scenes of a working museum, access to staff-only lectures, and a monthly lunch where all staff and volunteers come together to discuss ideas for future exhibits and strategies for the museum.</p>
+              <p>You can help volunteer in a number of different spheres. Please contact us if you'd like to find out more about how you can get involved.</p>
+              <div class="button-container">
+                <button>Volunteer</button>
+              </div>
+            </div>
+        </div>
+
+        <input type="checkbox" id="menuToggle" class="menu-toggle-checkbox" style="display: none;">       <!--toggles overlay-->
+        <div class="sidebar">
+            <div class="hamburger-overlay" id="menuOverlay" aria-label="Menu overlay">   
+        
+                <div class="overlay-header">
+                    <h3 class="medium">Menu</h3>
+                    <label for="menuToggle" class="overlay-close-btn" aria-label="Close menu">&times;</label>
+                </div>
+        
+                <div class="overlayOptionsContainer">
+                    <a href="index.html">
+                      <h5 class="menu-item">Home</h5>
+                    </a>
+                    <a href="exhibitions.html">
+                      <h5 class="menu-item">Exhibitions</h5>
+                  </a>
+                    <a href="special_events.html">
+                      <h5 class="menu-item">Special Events</h5>
+                  </a>
+                    <a href="contribute.html">
+                      <h5 class="menu-item">Contribute to the Museum</h5>
+                  </a>
+                    <a href="contact.html">
+                      <h5 class="menu-item">Contact</h5>
+                  </a>
+                    <a href="terms_conditions.html">
+                      <h5 class="menu-item">Terms & Conditions</h5>
+                  </a>
+                    <a href="privacy_policy.html">
+                      <h5 class="menu-item">Privacy Policy</h5>
+                  </a>
+                </div>
+                <div class="overlayLogoContainer">
+                    <img src="assets/images/logo/whitelogo.svg" class="overlayLogo" alt="company logo in hamburger overlay">
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <footer id=desktop-footer class="footer">
+      <div class="footer-container">
+            <!--footer left side-->
+          <div class="footer-left-container">
+            <a href="index.html"  aria-label="Back to homepage">
+              <img src="assets/images/logo/whitelogo.svg" class="footer-logo" alt="company logo in footer">
+            </a>
+          </div>
+          <!--footer center-->
+          <div class="footer-center-container">
+              <div class="footer-column-1">
+                  <a href="exhibitions.html" class="footer-titles">Exhibitions</a>
+                  <a href="special_events.html" class="footer-titles">Special Events</a>
+              </div>
+              <div class="footer-column-2">
+                  <a href="index.html#visit" class="footer-titles">Opening Hours</a>
+                  <a href="index.html#visit" class="footer-titles">Where to find us</a>
+              </div>
+              <div class="footer-column-3">
+                  <a href="contribute.html" class="footer-titles">Contribute to the Museum</a>
+                  <a href="contact.html" class="footer-titles">Contact</a>
+              </div>
+              <div class="footer-column-4">
+                  <a href="terms_conditions.html" class="footer-titles">Terms & Conditions</a>
+                  <a href="privacy_policy.html" class="footer-titles">Privacy Policy</a>
+              </div>
+          </div>
+
+          <div class="footer-right-container-placeholder"></div>
+      </div>
+    </footer>
+</body>
+</html>

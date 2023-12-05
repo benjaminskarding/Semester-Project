@@ -1,0 +1,27 @@
+@import url(common.css);
+@import url(_reset.css);
+@import url(_variables.css);
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 900px;
+    background-color: #E66800;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.main-content p, li {
+    margin-bottom: 1em;
+    margin-right: 5em;
+}
+
+.reduce-margin {
+    margin-top: -1em;
+}

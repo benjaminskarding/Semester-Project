@@ -1,0 +1,49 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none; 
+    cursor: pointer; 
+    color: inherit;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; /* Adjust padding as needed */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end; /* Aligns the nav to the right */
+    align-items: center; /* Vertically aligns the nav items */
+}
+
+.header-link {
+    margin-left: 1rem; /* Spacing between links */
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Sets text color to white */
+    /* Additional styling for the links */
+}
+
+.header-link:hover {
+    text-decoration: underline; /* Underline on hover for links */
+    cursor: pointer; /* Hand icon on hover */
+}

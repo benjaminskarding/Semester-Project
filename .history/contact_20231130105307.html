@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/contact_us.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header class="header-collection">
+        <div class="header-wrapper">
+            <nav class="header-main-nav">
+                <div class="header-nav-left-placeholder"> 
+                </div>
+                <div class="header-nav-center-logo"></div>
+                    <img class="logo" src="assets/images/logo/logo.svg" alt="company logo">
+                <div class="header-nav-right">
+                    <label for="menuToggle" class="menu-button" aria-label="Open Menu"> <!--toggles overlay-->
+                        <span class="white">MENU</span>
+                        <img src="assets/images/icons/helix.svg" class="menuIcon" alt="navigation menu icon">
+                    </label>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="top-bar">
+        <h3 class="medium">Contact Us</h3>
+    </div>
+    <div class="main-grid">
+        <div class="main-content">
+            <div class="main-content-bg">
+                <div class="contact-form">
+                    <form action="#" method="post">
+                      <div class="input-group">
+                        <label for="email">Email:</label> <!-- the FOR tag instructs the browser what the label is, well, for.  If user clicks the label itself, browser automatically targets the input field-->
+                        <input type="email" id="email" name="email" required>
+                      </div>
+                      <div class="input-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" pattern="^[A-Za-z]+\s[A-Za-z]+$" title="Please enter both first and last names separated by a space." required>
+                      </div>
+                      <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="8" required></textarea>
+                      </div>
+                      <div class="input group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">I would like to receive the newsletter</label>
+                      </div>
+                        <button type="submit" class="contact-form button" id="submitFormBtn">SUBMIT</button>
+                    </form>
+                  </div>
+            </div>
+        </div>
+        <input type="checkbox" id="menuToggle" class="menu-toggle-checkbox" style="display: none;">       <!--toggles overlay-->
+        <div class="sidebar">
+            <div class="hamburger-overlay" id="menuOverlay" aria-label="Menu overlay">   
+        
+                <div class="overlay-header">
+                    <h3 class="medium">Menu</h3>
+                    <label for="menuToggle" class="overlay-close-btn" aria-label="Close menu">&times;</label>
+                </div>
+        
+                <div class="overlayOptionsContainer">
+                    <a href="index.html">
+                      <h5 class="menu-item">Home</h5>
+                    </a>
+                    <a href="exhibitions.html">
+                      <h5 class="menu-item">Exhibitions</h5>
+                  </a>
+                    <a href="special_events.html">
+                      <h5 class="menu-item">Special Events</h5>
+                  </a>
+                    <a href="contribute.html">
+                      <h5 class="menu-item">Contribute to the Museum</h5>
+                  </a>
+                    <a href="contact.html">
+                      <h5 class="menu-item">Contact</h5>
+                  </a>
+                    <a href="terms_conditions.html">
+                      <h5 class="menu-item">Terms & Conditions</h5>
+                  </a>
+                    <a href="privacy_policy.html">
+                      <h5 class="menu-item">Privacy Policy</h5>
+                  </a>
+                </div>
+                <div class="overlayLogoContainer">
+                    <img src="assets/images/logo/logo.svg" class="overlayLogo" alt="rainy days logo in hamburger overlay">
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <footer id=desktop-footer class="footer">
+        <div class="footer-container">
+              <!--footer left side-->
+              <a href="index.html" class="footer-left-container" aria-label="Back to homepage">
+                <img src="assets/images/logo/logo.svg" class="footer-logo" alt="company logo in footer">
+              </a>
+            <!--footer center-->
+            <div class="footer-center-container">
+              <div class="footer-column-1">
+                <p class="footer-titles">Exhibitions</p>
+                <p class="footer-titles">Special Events</p>
+              </div>
+              <div class="footer-column-2">
+                <p class="footer-titles">Opening Hours</p>
+                <p class="footer-titles">Where to find us</p>
+              </div>
+              <div class="footer-column-3">
+                <p class="footer-titles">Contribute to the Museum</p>
+                <p class="footer-titles">Contact</p>
+              </div>
+              <div class="footer-column-4">
+                <p class="footer-titles">Terms & Conditions</p>
+                <p class="footer-titles">Privacy Policy</p>
+              </div>
+            </div>
+        </div>
+      </footer>
+</body>
+</html>

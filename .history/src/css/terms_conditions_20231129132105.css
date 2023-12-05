@@ -1,0 +1,9 @@
+@import url(common.css);
+@import url(_reset.css);
+@import url(_variables.css);
+
+
+
+.main-content {
+    display: flex;
+}

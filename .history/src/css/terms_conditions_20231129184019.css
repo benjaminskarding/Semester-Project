@@ -1,0 +1,44 @@
+@import url(common.css);
+@import url(_reset.css);
+@import url(_variables.css);
+
+
+.main-grid { 
+    display: grid;
+    margin-bottom: 5rem;
+    margin-left: 3vw;
+    grid-gap: 3rem;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "main-content sidebar"
+
+}
+
+.main-content { grid-area: main-content }
+.sidebar     { grid-area: sidebar }
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: #E66800;
+    height: 10000px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.main-content p, li {
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+}
+
+.reduce-margin {
+    margin-top: -1em;
+}

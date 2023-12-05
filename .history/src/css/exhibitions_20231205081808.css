@@ -1,0 +1,74 @@
+@import url(common.css);
+@import url(_reset.css);
+@import url(_variables.css);
+
+
+.main-grid {
+    display: grid;
+    gap: 2rem; 
+    margin: 0 10rem;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-areas: 
+        "title title"
+        "topLeft topRight"
+        "midLeft1 midRight1"
+        "midLeft2 midRight2"
+        "midLeft3 midRight3"
+        "botLeft botRight";
+}
+
+
+.title { 
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+}
+
+.topLeft {
+    grid-area: topLeft;
+}
+
+.topRight {
+    grid-area: topRight;
+}
+
+.midLeft1 {
+    grid-area: midLeft;
+}
+
+.midRight1 {
+    grid-area: midRight;
+}
+
+.midLeft2 {
+    grid-area: midLeft2;
+}
+
+.midRight2 {
+    grid-area: midRight2;
+}
+
+.midLeft3 {
+    grid-area: midLeft3;
+}
+
+.midRight3 {
+    grid-area: midRight3;
+}
+
+.botLeft {
+    grid-area: botLeft;
+}
+
+.botRight {
+    grid-area: botRight;
+}
+
+
+
+
+
+
+img {
+    height: 400px;
+}

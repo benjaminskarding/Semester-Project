@@ -1,0 +1,188 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer; 
+    color: inherit;
+}
+
+/* common header, landing page has specific */
+
+.header-collection {
+    background-color: white;
+    height: 160px;
+}
+
+.header-wrapper {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.logo {
+    margin-top: 1.5rem;
+}
+
+  
+.header-main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.header-nav-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-medium);
+}
+
+.header-nav-left a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+  
+.header-nav-center-logo {
+    flex: 0;
+}
+  
+.header-nav-right-placeholder {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Footer */
+
+.footer{
+    background-color: var(--color-secondary);
+    height: 200px;
+    display: flex;
+    margin-top: 3rem;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    width: 100%;
+}
+
+
+.footer-center-container {
+    display: flex;
+    gap: 15rem;
+    margin-right: 3rem;
+}
+
+.footer-logo {
+    height: 100px;
+}
+
+.footer-titles {
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color: white;
+}
+
+
+/* Main content */
+
+.main-content-container {
+    display: flex;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    background-color: #E66800;
+    width: 100%;
+    height: 160px;
+}
+
+.top-bar h3 {
+    margin-left: 3rem;
+}
+
+/* Hamburger overlay */
+
+.hamburger-overlay {
+    position: fixed;
+    top: 160px;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    background-color: var(--color-secondary);
+    z-index: 1000;
+    visibility: hidden; 
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+  
+.overlay-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.hamburger-overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlayOptionsContainer {
+    flex-direction: column;
+    height: 100%;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+    color: white;
+}
+
+.overlayTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.overlayLogoContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.overlayLogo {
+    width: 50%;
+}
+
+.overlay-close-btn {
+    padding-top: 10px;
+    margin-left: 1rem;
+    color: white;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+

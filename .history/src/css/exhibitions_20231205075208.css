@@ -1,0 +1,36 @@
+@import url(common.css);
+@import url(_reset.css);
+@import url(_variables.css);
+
+
+.exhibitions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
+    gap: 2rem; /* Adjust the gap as needed */
+}
+
+.exhibit {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Splits each exhibit into two equal columns */
+    align-items: center; /* Aligns the content vertically */
+    gap: 1rem; /* Space between image and text */
+}
+
+.exhibit:nth-child(even) .exhibit-info {
+    order: 1; /* This will switch the text to the left side for even exhibits */
+}
+
+.exhibit img {
+    width: 100%; /* Ensures the image takes up the full grid column */
+    height: auto; /* Keeps the image aspect ratio */
+    border: 3px solid orange; /* Adjust as per your design */
+}
+
+.exhibit-info {
+    padding: 1rem; /* Add padding around the text */
+}
+
+/* Add styles for h3 and p elements inside .exhibit-info as needed */
+
+
+

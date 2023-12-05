@@ -1,0 +1,22 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    color: inherit; /* Optional: Ensures the link color matches the parent text color */
+    text-decoration: none; /* Removes the default underline from links */
+    cursor: pointer; /* Changes cursor to the 'pointer' hand icon on hover */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}

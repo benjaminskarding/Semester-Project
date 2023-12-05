@@ -1,0 +1,24 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none; 
+    cursor: pointer; 
+    color: inherit;
+}
+
+
+
+
+.header-link {
+    color: white; 
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+}
+
+.header-link:hover {
+    text-decoration: underline; 
+
+}

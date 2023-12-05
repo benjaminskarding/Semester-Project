@@ -1,0 +1,25 @@
+.hamburger-overlay-2 {
+    position: fixed; /* Overrides the absolute position */
+    width: 33%; /* Specific width for this overlay version */
+    background-color: var(--color-secondary); /* Specific background color */
+    /* No need to repeat properties that don't change from the base .hamburger-overlay class */
+}
+
+/* Override or add styles specific to the overlay-header in the new overlay */
+.hamburger-overlay-2 .overlay-header {
+    margin-top: 3rem; /* Specific margin for the new overlay */
+    /* Again, no need to repeat unchanging properties */
+}
+
+/* Override or add styles specific to the overlayLogoContainer in the new overlay */
+.hamburger-overlay-2 .overlayLogoContainer {
+    justify-content: flex-end; /* Aligns the logo to the bottom */
+    flex-direction: column; /* Ensures the logo is aligned vertically */
+    align-items: center; /* Center the items horizontally */
+}
+
+/* Correct the selector for the checkbox hack to target the new overlay class */
+.menu-toggle-checkbox:checked ~ .hamburger-overlay-2 {
+    transform: translateX(0);
+    visibility: visible;
+}

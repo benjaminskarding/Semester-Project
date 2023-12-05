@@ -1,0 +1,58 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none; 
+    cursor: pointer; 
+    color: inherit;
+}
+
+
+
+
+.header-collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .header-nav-left-placeholder {
+    flex: 1;
+  }
+  
+  .header-nav-center-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-nav-right-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .logo {
+    max-width: 100%; /* Ensures the logo scales properly */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+.header-link {
+    color: white; 
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+}
+
+.header-link:hover {
+    text-decoration: underline; 
+
+}

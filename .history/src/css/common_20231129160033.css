@@ -1,0 +1,234 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer; 
+    color: inherit;
+}
+
+/* common header, landing page has specific */
+
+.header-collection {
+    background-color: white;
+    height: 160px;
+}
+
+.header-wrapper {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.logo {
+    margin-top: 1.5rem;
+}
+
+  
+.header-main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.header-nav-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-medium);
+}
+
+.header-nav-left a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+  
+.header-nav-center-logo {
+    flex: 0;
+}
+  
+.header-nav-right-placeholder {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Footer */
+
+.footer{
+    background-color: var(--color-secondary);
+    height: 200px;
+    display: flex;
+    margin-top: 3rem;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    width: 100%;
+}
+
+
+.footer-center-container {
+    display: flex;
+    gap: 15rem;
+    margin-right: 3rem;
+}
+
+.footer-logo {
+    height: 100px;
+}
+
+.footer-titles {
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color: white;
+}
+
+
+/* Main content */
+
+.main-content-container {
+    display: flex;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    background-color: #E66800;
+    width: 100%;
+    height: 160px;
+}
+
+.top-bar h3 {
+    margin-left: 3rem;
+}
+
+/* Hamburger overlay */
+
+.hamburger-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30rem;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+    visibility: hidden; 
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+  }
+  
+  .overlay-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+  }
+  
+  .hamburger-overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .overlayOptionsContainer {
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-container input[type="text"] {
+    background-image: url(../../assets/project_images/Icons/search-line-black.svg); 
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+  }
+  
+  .menu-item::after {
+    content: "";
+    display: inline-block;
+    width: 24px;  
+    height: 24px;  
+    background-image: url(../../assets/project_images/Icons/arrow-right-line-full-opacity.svg);  
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .overlayTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+  }
+  
+  .overlayLogoContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .overlayLogo {
+    width: 50%;
+  }
+  
+  .overlay-close-btn {
+    padding-top: 10px;
+    margin-left: 1rem;
+    color: black;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cart-counter-container {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .cart-icon {
+    width: 24px;
+    height: auto;
+  }
+  
+  .cart-counter {
+    font-family: "Monda";
+    font-size: 1.275rem;
+  }
+  
+  /* Hamburger overlay end*/

@@ -1,0 +1,25 @@
+@import url(common.css);
+@import url(_reset.css);
+@import url(_variables.css);
+
+
+.main-content-container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.main-content p, li {
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+}
+
+.reduce-margin {
+    margin-top: -1em;
+}

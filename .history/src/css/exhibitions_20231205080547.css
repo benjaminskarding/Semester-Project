@@ -1,0 +1,29 @@
+@import url(common.css);
+@import url(_reset.css);
+@import url(_variables.css);
+
+
+.main-grid {
+    display: grid;
+    gap: 2rem; 
+    margin: 0 10rem;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-areas: 
+        "title title"
+        "main-content main-content";
+}
+
+.title { 
+    grid-area: title;
+}
+
+.main-content { 
+    grid-area: main-content;
+}
+
+.exhibit {
+    display: flex; 
+    gap: 1rem; 
+    align-items: center; 
+}
+

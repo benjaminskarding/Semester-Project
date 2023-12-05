@@ -1,0 +1,67 @@
+:root{
+    --color-primary: white;
+    --color-secondary: #E66800;
+
+    --font-primary: 'Red Hat Display', sans-serif;
+    --font-size: 16px;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+}
+
+.medium {
+    font-weight: 500
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+strong, .bold {
+    font-weight: var(--font-weight-bold)
+}
+
+body {
+    font-family: var(--font-primary)
+}
+
+.white {
+    color:white;
+}
+
+.orange {
+    color: var(--color-secondary)
+}
+
+h1,h2,h3,h4 {
+    color: var(--color-primary)
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 4rem; /* 64px */
+}
+
+h4 {
+    font-size: 3rem;
+}
+
+h5 {
+    font-size: 1.25rem; /*20px*/
+    font-weight: var(--font-weight-medium);
+}
+
+h6 {
+    font-size: 1.125rem; /*18px*/
+    font-weight: var(--font-weight-medium)
+}
