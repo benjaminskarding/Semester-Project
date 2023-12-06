@@ -289,8 +289,6 @@ h4 {
     color: var(--color-secondary)
 }
 
-/* Grid Four */
-
 .grid4 {
     display: grid;
     grid-template-columns: 33% 2fr; 

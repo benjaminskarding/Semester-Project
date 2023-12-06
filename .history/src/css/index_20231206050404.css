@@ -47,6 +47,7 @@ h4 {
     object-fit: cover; 
 }
 
+
 /* Hero text*/
 
 .hero-text {
@@ -107,6 +108,7 @@ h4 {
 .hero-small-link-two:hover + .line {
     border-top-color: var(--color-secondary); 
 }
+
 
 /* END OF INITIAL VIEWPORT */
 
@@ -233,8 +235,6 @@ h4 {
     margin-bottom: 0;
 }
 
-/* Grid Two */
-
 .grid2 {
     display: grid;
     grid-template-columns: 2fr 33%; 
@@ -251,9 +251,6 @@ h4 {
 .low-mid-right-column {grid-area: low-mid-right-column}
 .left-sidebar {grid-area: left-sidebar}
 
-
-/* Grid Three */
-
 .grid3 {
     display: grid;
     grid-template-columns: 2fr 1fr 33%; 
@@ -268,6 +265,7 @@ h4 {
 .exhibText {grid-area: exhibText}
 .carouselDescription { grid-area: carouselDescription}
 
+
 .carouselDescription {
     flex-direction: column;
     background-color: #D9D9D9;
@@ -277,6 +275,7 @@ h4 {
 .carouselDescription h5 {
     margin: 1rem 1rem 0 1rem;
 }
+
 
 .bigButton {
     display: block;
@@ -288,8 +287,6 @@ h4 {
     font-size: 3rem;
     color: var(--color-secondary)
 }
-
-/* Grid Four */
 
 .grid4 {
     display: grid;
