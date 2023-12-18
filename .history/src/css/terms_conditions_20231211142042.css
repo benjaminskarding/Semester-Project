@@ -1,0 +1,76 @@
+@import url(common.css);
+@import url(_reset.css);
+@import url(_variables.css);
+
+
+.main-grid { 
+    display: grid;
+    margin-bottom: 5rem;
+    margin-left: 3rem;
+    grid-gap: 3rem;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "main-content sidebar"
+
+}
+
+.main-content { grid-area: main-content }
+.sidebar     { grid-area: sidebar }
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.main-content p, li, h5 {
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+    margin-left: 2rem;
+}
+
+.reduce-margin {
+    margin-top: -1em;
+}
+
+.title-bar {
+    grid-template-columns: auto;
+}
+
+
+@media (max-width: 1502px) {
+    .bpHide-1 {
+        display: none;
+    }
+
+
+    .footer-left-container,
+    .footer-right-container {
+        flex: 0;
+    }
+}
+
+
+@media (max-width: 1020px) {
+    .bpHide-2 {
+        display: none;
+    }
+
+    .overlay-header h3 {
+        font-size: 2.25rem;
+    }
+
+    .overlayLogo {
+        width: 75%;
+    }
+
+    .bpHide-3 {
+        display: none;
+    }
+}
+
+@media (max-width: 665px) {
+
+}
