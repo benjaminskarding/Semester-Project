@@ -362,7 +362,7 @@ h4 {
 .navStuff {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 100%;
 }
 
@@ -504,10 +504,6 @@ body {
     .carouselArrows {
         margin-top: 1rem;
     }
-
-    .navStuff {
-        margin-bottom: -2rem;
-    }
 }
 
 
@@ -629,6 +625,10 @@ body {
 
     .left-sidebar {
         margin-bottom: 2rem;
+    }
+
+    .buttonWrapper {
+        margin-bottom: 0rem;
     }
 
     .title-bar {

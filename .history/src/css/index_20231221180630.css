@@ -375,7 +375,6 @@ h4 {
 .buttonWrapper {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
 }
 
 .buttonWrapper::after {
@@ -503,10 +502,6 @@ body {
 
     .carouselArrows {
         margin-top: 1rem;
-    }
-
-    .navStuff {
-        margin-bottom: -2rem;
     }
 }
 

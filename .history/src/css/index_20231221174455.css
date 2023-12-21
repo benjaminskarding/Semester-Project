@@ -27,7 +27,6 @@ h4 {
 
 .landing-section {
     height: 100vh;
-    width: 100vw;
 }
 
 /*Background video */
@@ -504,10 +503,6 @@ body {
     .carouselArrows {
         margin-top: 1rem;
     }
-
-    .navStuff {
-        margin-bottom: -2rem;
-    }
 }
 
 
@@ -569,10 +564,6 @@ body {
             "mid-bar mid-bar mid-bar";
     }
 
-    .mid-bar {
-        display: none;
-    }
-
     .grid2 {
         display: grid;
         grid-template-columns: auto;
@@ -581,13 +572,13 @@ body {
         margin-right: 0rem;
         margin-top: 2rem;
         grid-template-areas: 
-        "left-sidebar left-sidebar"
         "teach-col teach-col"
-        "low-mid-right-column low-mid-right-column"; 
+        "low-mid-right-column low-mid-right-column"
+        "left-sidebar left-sidebar"; 
       }
 
     .low-mid-right-column {
-        margin: 0 2rem 2rem 2rem;
+        margin: 0 2rem 0 2rem;
     }
 
     .left-column .column-text-content p,
@@ -599,16 +590,6 @@ body {
     .teach-col .column-text-content h4,
     .teach-col .column-text-content h6 {
         margin: 1rem 2rem 0 2rem;
-    }
-
-    .teach-col .column-text-content h4,
-    .left-sidebar{
-        margin-top: -2rem;
-    }
-
-    .mid-right-column .right-column-text-content h2,
-    .suppMuseum .column-text-content h4 {
-        margin-top: -1rem;
     }
 
     .right-column-text-content p, 
@@ -654,15 +635,11 @@ body {
     
 h1 {
     text-align: center;
-    font-size: 14vw;
+    font-size: 12vw;
 }
 
 h2 {
-    font-size: 7vw;
-}
-
-.hero-text {
-    margin: 0 2rem 5rem 2rem;
+    font-size: 8vw;
 }
 
 .hero-text-bottom {
@@ -676,30 +653,11 @@ h2 {
     margin-left: 0rem;
     gap: 1rem;
     font-size: 1.25rem;
-    width: 97%;
+    width: 100%;
 }
 
 .title {
-    width: 80%;
+    width: auto;
     margin-bottom: 2rem;
-    margin-top: 1rem;
 }
-
-.main-grid {
-    grid-template-columns: auto; 
-    grid-template-areas:
-        "left-column left-column left-column"
-        "center-column center-column center-column"
-        "right-sidebar right-sidebar right-sidebar"
-        "image image image"
-        "mid-right-column mid-right-column mid-right-column"
-        "bigButton bigButton bigButton"
-        "mid-bar mid-bar mid-bar";
-}
-
-.center-column {
-    margin: 0 2rem 0 2rem;
-}
-
-
 }

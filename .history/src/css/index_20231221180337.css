@@ -504,10 +504,6 @@ body {
     .carouselArrows {
         margin-top: 1rem;
     }
-
-    .navStuff {
-        margin-bottom: -2rem;
-    }
 }
 
 
@@ -602,12 +598,11 @@ body {
     }
 
     .teach-col .column-text-content h4,
-    .left-sidebar{
+    .left-sidebar {
         margin-top: -2rem;
     }
 
-    .mid-right-column .right-column-text-content h2,
-    .suppMuseum .column-text-content h4 {
+    .mid-right-column .right-column-text-content h2 {
         margin-top: -1rem;
     }
 

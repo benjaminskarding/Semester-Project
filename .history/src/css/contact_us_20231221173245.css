@@ -104,12 +104,9 @@
     padding: 2rem;
     margin: 2rem 3rem 0 0;   
     max-height: 300px;
-    font-family: var(--font-primary);
     font-size: 3rem;
-    font-weight: var(--font-weight-medium);
     color: var(--color-secondary);
     background-color: white;
-    cursor: pointer;
 }
 
 /* Overlay 2 */

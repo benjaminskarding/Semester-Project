@@ -505,8 +505,8 @@ body {
         margin-top: 1rem;
     }
 
-    .navStuff {
-        margin-bottom: -2rem;
+    .buttonWrapper::lastchild {
+        margin-bottom: 0rem;
     }
 }
 

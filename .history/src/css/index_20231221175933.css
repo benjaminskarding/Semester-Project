@@ -504,10 +504,6 @@ body {
     .carouselArrows {
         margin-top: 1rem;
     }
-
-    .navStuff {
-        margin-bottom: -2rem;
-    }
 }
 
 
@@ -587,7 +583,7 @@ body {
       }
 
     .low-mid-right-column {
-        margin: 0 2rem 2rem 2rem;
+        margin: 0 2rem 0 2rem;
     }
 
     .left-column .column-text-content p,
@@ -598,17 +594,7 @@ body {
     .teach-col .column-text-content li,
     .teach-col .column-text-content h4,
     .teach-col .column-text-content h6 {
-        margin: 1rem 2rem 0 2rem;
-    }
-
-    .teach-col .column-text-content h4,
-    .left-sidebar{
-        margin-top: -2rem;
-    }
-
-    .mid-right-column .right-column-text-content h2,
-    .suppMuseum .column-text-content h4 {
-        margin-top: -1rem;
+        margin: 0rem 2rem 0 2rem;
     }
 
     .right-column-text-content p, 
