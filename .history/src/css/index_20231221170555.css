@@ -645,14 +645,13 @@ h1 {
 .additional-links {
     display: flex;
     flex-direction: column;
-    margin-left: 0rem;
+    margin-left: 1rem;
     gap: 1rem;
     font-size: 1.25rem;
-    width: 100%;
+    width: 50%;
 }
 
 .title {
-    width: 100%;
     margin-bottom: 2rem;
 }
 
