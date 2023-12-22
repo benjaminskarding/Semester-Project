@@ -1,0 +1,161 @@
+@import url(common.css);
+@import url(_reset.css);
+@import url(_variables.css);
+@import url(hamburger-overlay-2.css);
+
+
+
+.main-grid {
+    display: grid;
+    gap: 5rem; 
+    margin: 0 10rem 0 10rem;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "title title"
+        "topText topPic"
+        "pic1 text1"
+        "text2 pic2"
+        "pic3 text3"
+        "botText botPic"
+        "specEvents specEvents";
+}
+
+/* Grid area assignments */
+.topPic { grid-area: topPic; }
+.topText { grid-area: topText; }
+.pic1 { grid-area: pic1; }
+.text1 { grid-area: text1; }
+.pic2 { grid-area: pic2; }
+.text2 { grid-area: text2; }
+.text3 { grid-area: text3; }
+.pic3 { grid-area: pic3; }
+.botText { grid-area: botText; }
+.botPic { grid-area: botPic; }
+.specEvents { grid-area: specEvents; }
+.title { grid-area: title; }
+
+
+.title { 
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.topPic img,
+.pic1 img,
+.pic2 img,
+.pic3 img,
+.botPic img {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 40px 40px 0px 0 #E66800;
+}
+
+.topText,
+.text1,
+.text2,
+.text3,
+.botText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.topText p, h5,
+.text1 p, h5,
+.text2 p, h5,
+.text3 p, h5,
+.botText p, h5 {
+    margin-bottom: 1rem;
+}
+
+
+.topPic,
+.pic1,
+.pic2,
+.pic3,
+.botPic {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+@media (max-width: 1090px) {
+    .main-grid {
+        display: grid;
+        gap: 5rem; 
+        margin: 0 5rem 0 5rem;
+        grid-template-columns: auto; 
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "title"
+            "topPic"
+            "topText"
+            "pic1"
+            "text1"
+            "pic2"
+            "text2"
+            "pic3"
+            "text3"
+            "botPic"
+            "botText "
+            "specEvents";
+    }
+
+    .topText p:last-of-type,
+    .text1 p:last-of-type,
+    .text2,
+    .text3,
+    .botText {
+        margin-bottom: -2rem;
+    }
+}
+
+
+
+@media (max-width: 665px) {
+    .title h2 {
+        margin: 0 1rem;
+        font-size: 3rem;
+    }
+
+    .hamburger-overlay-2 {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 510px) {
+
+
+
+    .topPic img,
+    .pic1 img,
+    .pic2 img,
+    .pic3 img,
+    .botPic img {
+        width: 85%;
+}
+
+    .topPic,
+    .pic1,
+    .pic2,
+    .pic3,
+    .botPic {
+        width: 85%;
+}
+
+    .main-grid {
+        display: grid;
+        gap: 5rem; 
+        margin: 0 1rem 0 1rem;
+
+    }
+}

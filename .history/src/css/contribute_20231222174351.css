@@ -1,0 +1,122 @@
+@import url(common.css);
+@import url(_reset.css);
+@import url(_variables.css);
+@import url(hamburger-overlay-2.css);
+
+
+.leftCol {grid-area: leftCol}
+.rightCol {grid-area: rightCol}
+.centCol {grid-area: centCol}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.title { 
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.main-grid {
+    display: grid;
+    flex-grow: 1; 
+    grid-gap: 3rem; 
+    margin: 0rem 5rem 0rem 5rem;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-areas: 
+    "title title title"
+    "leftCol centCol rightCol"; 
+}
+
+.leftCol,
+.centCol,
+.rightCol {
+    text-align: center;
+}
+
+.leftCol p,
+.rightCol p,
+.centCol p {
+    margin-top: 1rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; 
+}
+
+button {
+    padding: 0.5rem 2rem; 
+    background-color: var(--color-secondary);
+    font-size: 1.375rem; 
+    font-family: var(--font-primary);
+    color: white; 
+    border: none; 
+    border-radius: 0.25rem; 
+    cursor: pointer; 
+    margin: 3rem 0 0 0;
+}
+
+@media (max-width: 1495px) {
+    .main-grid {
+        display: grid;
+        grid-gap: 3rem; 
+        grid-template-columns: auto; 
+        grid-template-areas: 
+        "title"
+        "centCol" 
+        "leftCol" 
+        "rightCol"; 
+    }
+}
+
+@media (max-width: 665px) {
+    .main-content,
+    .title-bar {
+        align-items: center;
+        text-align: center;
+    }
+
+    .title h2 {
+        margin: 0 1rem;
+        font-size: 3rem;
+    }
+
+    .bpHide-3 {
+        display: none;
+    }
+
+    label[for="menuToggle"] {
+        display: none; 
+    }
+    label[for="menuToggle2"] {
+        display: block; 
+    }
+
+    .hamburger-overlay-2 {
+        display: block;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 461px) {
+    .main-grid {
+        margin: 0rem 3rem 0rem 3rem;
+    }
+
+    .button-container {
+        flex-wrap: wrap;
+    }
+
+    .button {
+        background-color: red;
+    }
+}
