@@ -494,8 +494,10 @@ body {
       }
 
       
+
     .carouselArrows {
         margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .navStuff {
@@ -510,10 +512,6 @@ body {
 
     .buttonWrapper:not(:last-child) {
         flex: 1; 
-    }
-
-    .buttonWrapper {
-        margin-bottom: 0rem;
     }
 }
 
