@@ -694,7 +694,7 @@ body {
         font-size: 10vh;
     }
 
-    h2:not(.explore-exclude) {
+    h2:not(.h2-explore) {
         font-size: 5vh;
     }
 
