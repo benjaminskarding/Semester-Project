@@ -695,13 +695,7 @@ body {
     }
 
     h2 {
-        font-size: 5vh;
-    }
-
-    .title {
-        width: 50%;
-        margin-bottom: 2rem;
-        margin-top: 1rem;
+        font-size: 1vh;
     }
 
 }

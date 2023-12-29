@@ -698,12 +698,6 @@ body {
         font-size: 5vh;
     }
 
-    .title {
-        width: 50%;
-        margin-bottom: 2rem;
-        margin-top: 1rem;
-    }
-
 }
 
 @media (max-width: 756px) {
@@ -740,7 +734,7 @@ h3 {
 }
 
 .title {
-    width: 80%;
+    width: 50%;
     margin-bottom: 2rem;
     margin-top: 1rem;
 }
