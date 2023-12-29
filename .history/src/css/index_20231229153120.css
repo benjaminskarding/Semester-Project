@@ -512,6 +512,9 @@ body {
     .buttonWrapper:not(:last-child) {
         flex: 1; 
     }
+
+
+
 }
 
 
@@ -693,7 +696,7 @@ body {
     
 h1 {
     text-align: center;
-    font-size: 13vw;
+    font-size: 14vw;
 }
 
 h2 {

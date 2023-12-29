@@ -70,16 +70,13 @@ outline: none;
     align-items: center;
 }
 
+
 .header-nav-right {
     flex: 1;
     display: flex;
     justify-content: flex-end;
     font-size: 1.25rem;
     font-weight: var(--font-weight-medium);
-}
-
-.header-nav-center-logo {
-    width: auto;
 }
 
 /* Footer */

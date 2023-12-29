@@ -70,16 +70,13 @@ outline: none;
     align-items: center;
 }
 
+
 .header-nav-right {
     flex: 1;
     display: flex;
     justify-content: flex-end;
     font-size: 1.25rem;
     font-weight: var(--font-weight-medium);
-}
-
-.header-nav-center-logo {
-    width: auto;
 }
 
 /* Footer */
@@ -125,6 +122,14 @@ outline: none;
 
 .footer-logo {
     height: 150px;
+}
+
+
+.header-nav-center-logo {
+    display: flex; /* or 'display: block;' if not already a flex container */
+    justify-content: center; /* this will center the content for flex container */
+    text-align: center; /* this will center the content for block container */
+    /* other styles */
 }
 
 .footer-titles {

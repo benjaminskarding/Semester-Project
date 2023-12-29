@@ -78,10 +78,6 @@ outline: none;
     font-weight: var(--font-weight-medium);
 }
 
-.header-nav-center-logo {
-    width: auto;
-}
-
 /* Footer */
 
 
@@ -125,6 +121,12 @@ outline: none;
 
 .footer-logo {
     height: 150px;
+}
+
+.logo .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-titles {

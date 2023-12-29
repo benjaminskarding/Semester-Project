@@ -44,7 +44,7 @@ h4 { margin-right: 3rem;}
     flex-direction: column;
     bottom: 0;
     left:0;
-    margin: 0 3rem 3rem;
+    margin: 0 3rem 3rem 3rem;
     font-family: var(--font-primary);
     color: white;
     font-size: 3rem;
@@ -693,7 +693,7 @@ body {
     
 h1 {
     text-align: center;
-    font-size: 13vw;
+    font-size: 14vw;
 }
 
 h2 {
@@ -706,6 +706,7 @@ h3 {
 
 .hero-text {
     margin: 0 2rem 5rem 2rem;
+    margin-right: 5rem;
 }
 
 .hero-text-bottom {

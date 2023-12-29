@@ -693,7 +693,7 @@ body {
     
 h1 {
     text-align: center;
-    font-size: 13vw;
+    font-size: 14vw;
 }
 
 h2 {
@@ -705,7 +705,7 @@ h3 {
 }
 
 .hero-text {
-    margin: 0 2rem 5rem 2rem;
+    margin: 0 2.5rem 5rem 2rem;
 }
 
 .hero-text-bottom {

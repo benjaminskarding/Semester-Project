@@ -70,16 +70,16 @@ outline: none;
     align-items: center;
 }
 
+.header-nav-center-logo {
+    display: flex;
+}
+
 .header-nav-right {
     flex: 1;
     display: flex;
     justify-content: flex-end;
     font-size: 1.25rem;
     font-weight: var(--font-weight-medium);
-}
-
-.header-nav-center-logo {
-    width: auto;
 }
 
 /* Footer */
@@ -125,6 +125,12 @@ outline: none;
 
 .footer-logo {
     height: 150px;
+}
+
+.logo .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-titles {
