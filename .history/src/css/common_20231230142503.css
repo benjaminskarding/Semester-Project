@@ -338,6 +338,7 @@ outline: none;
     }
 
     /* Adjust footer container styling for mobile devices */
+    
     .footer-center-container {
         display: flex;
         justify-content: center; 
@@ -376,3 +377,6 @@ outline: none;
     }
 }
 
+@media (max-width: 370px) {
+
+}

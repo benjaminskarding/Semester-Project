@@ -331,13 +331,12 @@ outline: none;
 @media (max-width: 800px) {
 
     #desktopFooter {
-        display: none; /* Hide desktop footer */
+        display: none;
     }
     #mobileFooter {
-        display: flex; /* Show mobile footer */
+        display: flex;
     }
 
-    /* Adjust footer container styling for mobile devices */
     .footer-center-container {
         display: flex;
         justify-content: center; 
@@ -376,3 +375,6 @@ outline: none;
     }
 }
 
+@media (max-width: 370px) {
+
+}

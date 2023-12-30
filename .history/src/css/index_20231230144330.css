@@ -150,10 +150,7 @@ h4 { margin-right: 3rem;}
 
 /* Visit Section Content */
 
-.left-column, 
-.right-sidebar, 
-.center-column, 
-.left-sidebar {
+.left-column, .right-sidebar, .center-column, .left-sidebar {
     display: flex;
     flex-direction: column;
 }
@@ -162,8 +159,7 @@ h4 { margin-right: 3rem;}
     justify-content: center;
 }
 
-.right-sidebar, 
-.left-sidebar {
+.right-sidebar, .left-sidebar {
     justify-content: space-evenly;
     color:white;
     background-color: var(--color-secondary);
